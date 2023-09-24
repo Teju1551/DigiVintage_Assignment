@@ -1,0 +1,300 @@
+HTML:
+
+<div class="main">
+        <label for="range">age</label>
+        <input type="range" min="18" max="60" value="30" id="slider">
+        <div id="selector">
+            <div class="SelectBtn"></div>
+            <div id="SelectValue"></div>
+        </div>
+</div>
+
+
+
+
+CSS:
+
+.main{
+    width: 60%;
+    margin: 0rem 0rem;
+    position: relative;
+}
+
+#slider{
+    -webkit-appearance: none;
+    width: 42%;
+    height: 8px; 
+    outline: none;
+    border-radius: 3px;
+}
+
+#slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    z-index: 3;
+    position: relative;
+}
+
+#selector{
+    height: 109px;
+    width: 48px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-265%);
+    z-index: 2;
+}
+
+.SelectBtn{
+    height: 48px;
+    width: 48px;
+    background-image: url(Images/icon.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5px;
+}
+
+#SelectValue{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 60px;
+    left: 3.5px;
+    background-color: #ffd200;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+radio button edit:
+
+<!DOCTYPE html>
+<html>
+<style>
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #fff;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: green;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: red;
+}
+</style>
+<body>
+
+<h1>Custom Radio Buttons</h1>
+<label class="container">One
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Two
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Three
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Four
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+swipper starts
+
+<div class="slide-container swiper">
+    <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="images/profile1.jpg" alt="" class="card-img">
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">Jeevan Nivesh Plan</h2>
+                    <p class="description">plan for the wishes that comes after all plans</p>
+
+                    <button class="button">Know More</button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="images/profile2.jpg" alt="" class="card-img">
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">iSelect Term Plan</h2>
+                    <p class="description">i select the term of my life</p>
+
+                    <button class="button">Know More</button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="images/profile3.jpg" alt="" class="card-img">
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">Smart Suraksha Plan</h2>
+                    <p class="description">make the smart choice to secure your family's happiness</p>
+
+                    <button class="button">Know More</button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="images/profile4.jpg" alt="" class="card-img">
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">iNvestshield Plan</h2>
+                    <p class="description">give your retirement a happy beginning with our pension plan</p>
+
+                    <button class="button">Know More</button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="images/profile5.jpg" alt="" class="card-img">
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h2 class="name">Pradhan Mantri Jeevan Jyoti Bima Yojna</h2>
+                    <p class="description">ensure a secure future for your loved ones</p>
+
+                    <button class="button">Know More</button>
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="image-content">
+                    <span class="overlay"></span>
+
+                    <div class="card-image">
+                        <img src="images/profile6.jpg" alt="" class="card-img">
+                    </div>
+                </div>
